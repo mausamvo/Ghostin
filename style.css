@@ -1,10 +1,23 @@
+.cursorBorder{
+    position: fixed;
+    z-index: 999;
+}
+
 .ghost{
     height: 4em;
     width: 4em;
-    position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 999;
     pointer-events: none;
     opacity: 0.7;
+    animation: float 3s infinite ease-in-out;
 }
+
+@keyframes float {
+    from, to {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
