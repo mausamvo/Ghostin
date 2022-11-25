@@ -1,6 +1,6 @@
 .cursorBorder{
     position: fixed;
-    z-index: 999;
+    z-index: 9999999;
 }
 
 .ghost{
